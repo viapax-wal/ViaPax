@@ -469,6 +469,7 @@ footer .social-links li a {
     font-size: 40px;
     margin-bottom:48px;
     color: #283588;
+    text-transform: capitalize;
 }
 .pitch-deck-form .form-group {
     margin-bottom:24px;
@@ -518,6 +519,7 @@ footer .social-links li a {
     color: #000000;
     margin-bottom: 50px;
     font-family: 'Inter-Bold';
+    text-transform: capitalize;
 }
 .call-action-wrapper p {
     font-weight: 400;
@@ -609,7 +611,13 @@ color: #94A3B8;
 #toTop svg {
     fill: #084298;
 }
-
+.call-action-wrapper .rating-app .rating-star-img {
+    width: 110px;
+}
+.call-action-wrapper .rating-app .rating-star-img svg {
+    width: 18px;
+    fill: #adb5bd;
+}
 
 /*media css start*/
 @media (max-width:1024px) {
@@ -668,6 +676,9 @@ color: #94A3B8;
     .features-wrap .features-head {
         width:100%;
     }
+    .section5 .p-3 {
+        padding:0;
+    }
 }
 @media (max-width:768px) {
     .section-img-wrap img {
@@ -675,6 +686,17 @@ color: #94A3B8;
     }
     .navbar-brand img {
         width: 100px;
+    }
+    .header-banner-wrap .banner-wrapper .rating-app {
+        display:block;
+    }
+    .header-banner-wrap .banner-wrapper .rating-app .rating-star-img {
+        margin-left: 5px !important;
+    }
+    .header-banner-wrap .banner-wrapper .rating-app .rating-star-img,
+    .header-banner-wrap .banner-wrapper .rating-app p {
+        display:inline-block;
+        margin-left: 0 !important;
     }
 }
 @media (max-width:767px) {
