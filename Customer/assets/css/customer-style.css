@@ -74,9 +74,6 @@ body {
     color: #182F43;
     font-family: 'Lato-Regular';
 }
-.pr-40 {
-    padding-right: 40px;
-}
 
 @media (min-width: 1400px) {
     .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
@@ -109,11 +106,11 @@ body {
     justify-content: center;
 }
 .header-banner-wrap .banner-wrapper h3 {
-    font-size: 40px;
+    font-size: 46px;
     color: #283588;
     margin-bottom:24px;
     line-height: 60px;
-    padding-right: 0px;
+    padding-right: 34px;
     text-transform: capitalize;
     font-family: 'Inter-Bold';
 }
@@ -135,7 +132,7 @@ body {
     align-items: center;
 }
 .header-banner-wrap .banner-wrapper .rating-app .rating-star-img {
-    width: 110px;
+    width: 122px;
 }
 .header-banner-wrap .banner-wrapper .rating-app .rating-star-img svg {
     width: 18px;
@@ -252,16 +249,14 @@ body {
     font-weight: 600;
     font-size: 24px;
     margin-bottom: 8px;
-    font-family: 'Inter-Bold';
 }
 .features-wrap .features-list .features-list-content p {
-    /* font-weight: 400; */
+    font-weight: 400;
     font-size: 17px;
     line-height: 22px;
     margin-bottom: 0;
     text-align: left;
     padding: 0;
-    font-family: 'Inter-Regular';
 }
 .features-wrap .features-head{
     font-size: 40px;
@@ -322,6 +317,7 @@ body {
     font-weight: 700;
     font-size: 30px;
     margin-bottom:15px;
+    font-family: 'Lato-Bold';
 }
 .align-wrap-why-viapax .why-viapax-content p {
     font-weight: 400;
@@ -357,7 +353,7 @@ body {
 }
 .faq-wrapper .faq-question p {
     font-weight: 400;
-    font-size: 20px;
+    font-size: 22px;
     margin-bottom:0;
     color:#405261;
 }
@@ -403,7 +399,15 @@ footer .footer-links ul {
     margin: 0;
     list-style: none;
 }
-footer .footer-links ul li {}
+footer .footer-links ul li {
+    color: #ECEDF2;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+    padding: 8px 0;
+    display: block;
+    cursor: default;
+}
 footer .footer-links ul li a {
     color: #ECEDF2;
     text-decoration: none;
@@ -411,7 +415,6 @@ footer .footer-links ul li a {
     font-size: 16px;
     padding: 8px 0;
     display: block;
-    font-family: 'Inter-Regular';
 }
 footer .rating-footer {
     display: flex;
@@ -430,13 +433,19 @@ footer .rating-footer .rating-star span {
     font-size: 16px;
     display:block;
 }
+footer .rating-footer .rating-star .rating-star-img {
+    width: 100px;
+}
+footer .rating-footer .rating-star .rating-star-img svg {
+    width: 15px;
+    fill: #adb5bd;
+}
 footer .copyright-wrap {
     border-top: 1px solid rgb(255 255 255 / 28%);
     margin-top: 37px;
 }
 footer .copyright-txt {
     margin:0;
-    font-family: 'Inter-Regular';
 }
 footer .social-links {
     margin: 0;
@@ -460,7 +469,6 @@ footer .social-links li a {
     font-size: 16px;
     color: #ECEDF2;
     padding:0 16px;
-    font-family: 'Inter-Regular';
 }
 .pitch-modal {}
 .pitch-modal .modal-content {
@@ -515,6 +523,7 @@ footer .social-links li a {
     color: #fff;
     font-size: 14px;
     border-radius: 4px;
+    width:100px;
 }
 .call-action-wrapper {
     padding-top: 130px;
@@ -526,10 +535,11 @@ footer .social-links li a {
     color: #000000;
     margin-bottom: 50px;
     font-family: 'Inter-Bold';
+    text-transform: capitalize;
 }
 .call-action-wrapper p {
     font-weight: 400;
-    font-size: 20px;
+    font-size: 21px;
     line-height: 30px;
     text-transform: capitalize;
     font-style: italic;
@@ -559,14 +569,14 @@ footer .social-links li a {
     font-weight: 400;
     font-size: 17px;
     font-style: normal;
-    font-family: 'FontsFree-Net-SFProDisplay-Regular';
+    font-family: 'Lato-Regular';
 }
 .call-action-wrapper p.delivery-txt{
     font-weight: bold;
     color: #000;
     font-style: normal;
     margin: 40px 0 32px 0;
-    font-family: 'FontsFree-Net-SFProDisplay-Bold';
+    font-family: 'Lato-Bold';
 }
 .dropdown-toggle::after {
     border:0;
@@ -626,15 +636,12 @@ color: #94A3B8;
 }
 
 /*media css start*/
-@media (max-width:1024px) {
+@media (max-width:1200px) {
     .section-img-wrap img {
         width:100%;
     }
 }
 @media (max-width:992px) {
-    .content-wrapper.pr-40 {
-        padding-right: 0;
-    }
     .section-img-wrap {
         text-align: center;
         justify-content: center;

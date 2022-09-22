@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>ViaPax</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/customer-style.css">
         <link rel="stylesheet" href="assets/css/carousel.css">
     </head>
   <body>
@@ -72,7 +72,10 @@
                               <img class="gallery-item gallery-item-2" src="assets/images/Enduser.png" data-index="2">
                             </div>
                             <div class="align-controls">
-                              <div class="gallery-controls" id="myDIV"></div>
+                                <div class="gallery-controls">
+                                    <a class="btn gallery-controls-Customer active-btn" href="customer.html">Customer</a>
+                                    <a class="btn gallery-controls-Handler" href="handler.html">Handler</a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -309,38 +312,37 @@
                     <h3>Frequently Asked Questions</h3>
                 </div>
                 <div class="row">
-                    <div class="col-md-12 col-lg-6 faq-question">
+                    <div class="col-md-12 faq-question">
                         <h3>1. Do you offer a refund Guarantee?</h3>
                         <p>Pellentesque in ipsum id orci porta dapibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.</p>
                     </div>
-                    <div class="col-md-12 col-lg-6 faq-question">
+                    <div class="col-md-12 faq-question">
                         <h3>2. How can i get a Refund</h3>
-                        <p>Curabitur aliquet quam id dui posuere blandit. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Praesent sapien massa, convallis a pellentesque nec, egestas.</p>
+                        <p>Curabitur aliquet quam id dui posuere blandit. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Praesent sapien massa, convallis a pellentesque nec, egestas.<span id="dots"></span> </p>
                     </div>
-                    <div class="col-md-12 col-lg-6 faq-question">
-                        <h3>3. How do I contact support?</h3>
-                        <p>Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur aliquet quam id dui posuere blandit. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.</p>
-                    </div>
-                    <div class="col-md-12 col-lg-6 faq-question">
-                        <h3>4. How do I contact support?</h3>
-                        <p>Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur aliquet quam id dui posuere blandit. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.</p>
-                    </div>
-                    <div class="col-md-12 col-lg-12 faq-question">
-                        <h3>5. How does Viapax work?</h3>
-                        <div class="more">
-                            <p class="mb-3">We partner with people (crowd-sourced) that travel to your parcel destination and rent their unused luggage space. 
-                                For example, the sender drops the package at our Airport Location for international shipping. 
-                                We then process the package/s and give them to the handler in the sterile zone of the airport (past TSA screening).<span id="dots">...</span> </p>
-                            <div id="more">
+                    <div id="more">
+                        <div class="col-md-12 faq-question">
+                            <h3>3. How do I contact support?</h3>
+                            <p>Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur aliquet quam id dui posuere blandit. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.</p>
+                        </div>
+                        <div class="col-md-12 faq-question">
+                            <h3>4. How do I contact support?</h3>
+                            <p>Vivamus suscipit tortor eget felis porttitor volutpat. Curabitur aliquet quam id dui posuere blandit. Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem.</p>
+                        </div>
+                        <div class="col-md-12 col-lg-12 faq-question">
+                            <h3>5. How does Viapax work?</h3>
+                            <div class="more">
+                                <p class="mb-3">We partner with people (crowd-sourced) that travel to your parcel destination and rent their unused luggage space. 
+                                    For example, the sender drops the package at our Airport Location for international shipping. 
+                                    We then process the package/s and give them to the handler in the sterile zone of the airport (past TSA screening).</p>
                                 <p class="mb-3">Upon arrival, the handler drops off the packages at the VP Agent counter. 
                                     We notify the recipient of the status through the app to take possession of the package.
                                 </p>
                                 <p class="mb-3">Airports already use this approach to their benefit but don’t pass the savings to you, unfortunately.</p>
                             </div>
-                            <button onclick="myFunction()" id="myBtn">Read more</button>
-
                         </div>
                     </div>
+                    <button onclick="myFunction()" id="myBtn">Read more</button>
                 </div>
             </div>
         </section>
@@ -361,27 +363,33 @@
                     <div class="col-lg-6">
                         <div class="footer-links">
                             <ul>
-                                <li><a href="#">About Us</a></li>
-                                <li><a href="#">Company Information</a></li>
-                                <li><a href="#">Our Team</a></li>
-                                <li><a href="#">Our Vision</a></li>
-                                <li><a href="#">Company Policy</a></li>
+                                <li>About Us</li>
+                                <li>Company Information</li>
+                                <li>Our Team</li>
+                                <li>Our Vision</li>
+                                <li>Company Policy</li>
                             </ul>
 
                             <ul>
-                                <li><a href="#">Privacy Policy</a></li>
-                                <li><a href="#">Terms & Conditions</a></li>
-                                <li><a href="#">Cookie Policy</a></li>
-                                <li><a href="#">Refunds & Returns</a></li>
-                                <li><a href="#">DCMA</a></li>
+                                <li>Privacy Policy</li>
+                                <li>Terms & Conditions</li>
+                                <li>Cookie Policy</li>
+                                <li>Refunds & Returns</li>
+                                <li>DCMA</li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-lg-3">
                         <div class="rating-footer">
-                            <h1>4.8/5</h1>
+                            <h1>0/5</h1>
                             <div class="rating-star">
-                                <span><img src="assets/images/Stars-white.png"></span>
+                                <span class="rating-star-img">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg>
+                                </span>
                                 <span>Rating</span>
                             </div>
                         </div>
@@ -455,7 +463,7 @@
 </div>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-<script src="assets/js/carousel.js"></script>
+<!-- <script src="assets/js/carousel.js"></script> -->
 <script>
    function myFunction() {
         var dots = document.getElementById("dots");

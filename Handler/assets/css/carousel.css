@@ -70,7 +70,7 @@
   height: 42px;
 }
 
-.gallery-controls button {
+.gallery-controls a {
   background-color: transparent;
   border: 0;
   cursor: pointer;
@@ -81,9 +81,10 @@
   width: 150px;
   height: 42px;
   border-radius: 72px;
+  line-height: 40px;
 }
 
-.gallery-controls button:focus {
+.gallery-controls a:focus {
   outline: none;
 }
 
