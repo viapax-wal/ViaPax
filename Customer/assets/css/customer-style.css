@@ -746,3 +746,9 @@ color: #94A3B8;
 
 
 /*media css end*/
+.fixed {
+    position: fixed;
+    top:0; left:0;
+    width: 100%; 
+    z-index: 9;
+}

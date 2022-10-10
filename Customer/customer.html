@@ -10,7 +10,7 @@
     </head>
   <body>
     <div class="wrapper">
-        <div class="header">
+        <div class="header" id="header">
             <nav class="navbar navbar-expand-md" aria-label="Second navbar example">
                 <div class="container">
                 <a class="navbar-brand" href="#"><img src="assets/images/logo.png"></a>
@@ -30,7 +30,7 @@
                             <a class="nav-link" href="#faq">FAQ</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#contactus">Contact Us</a>
+                            <a class="nav-link" href="mailto:connect@viapax.io">Contact Us</a>
                         </li>
                         <li class="nav-item ps-3 pitch-btn-hide-mobile">
                             <button class="pitch-btn" data-bs-toggle="modal" data-bs-target="#exampleModal">Pitch Deck</button>
@@ -350,8 +350,8 @@
         <section class="contect-wrapper" id="contactus">
             <div class="container">
                 <div class="align-wrapper">
-                    <h1>Have questions? Reach out to us at connect@viapax.com</h1>
-                    <a class="contact-btn" href="mailto:connect@viapax.com">Contact Us</a>
+                    <h1>Have questions? Reach out to us</h1>
+                    <a class="contact-btn" href="mailto:connect@viapax.io">Contact Us</a>
                 </div>
             </div>
         </section>
@@ -520,6 +520,13 @@
         //body works for Chrome but not FFX
         //This strange selector seems to work universally
         $("html, body").animate({scrollTop: 0}, 100);
+        });
+        $(window).scroll(function(){
+            var sticky = $('#header'),
+                scroll = $(window).scrollTop();
+
+            if (scroll >= 100) sticky.addClass('fixed');
+            else sticky.removeClass('fixed');
         });
     });
     </script>
