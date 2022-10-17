@@ -97,6 +97,7 @@ body {
 }
 .header-banner-wrap {
     padding:56px 0;
+    padding-top:100px;
 }
 .header-banner-wrap .banner-wrapper {
     height: 100%;
@@ -364,9 +365,9 @@ body {
 }
 .contect-wrapper .align-wrapper {}
 .contect-wrapper .align-wrapper h1 {
-    font-weight: 700;
+    font-family: 'Lato-Bold';
     font-size: 40px;
-    width:590px;
+    width:100%;
     margin:auto;
     margin-bottom: 40px;
 }
